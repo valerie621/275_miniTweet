@@ -16,8 +16,11 @@ public class App {
 
         try {
             tweeter.tweet("alex", "first tweet");
+            tweeter.tweet("are", "first tweet");
+            tweeter.follow("alex", "aja");
+            tweeter.tweet("alex", "first tweet1");
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
 
         System.out.println("Most productive user: " + tweetStats.getMostProductiveUser());
